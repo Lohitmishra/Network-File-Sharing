@@ -126,11 +126,18 @@ Before submitting, verify the following ✅
 - [ ] Ensure server_key.pem is *not committed* to the repository.  
 
         
-🏁 Final Notes
+## 🏁 Final Notes
 
-  This project demonstrates the end-to-end design of a secure client-server
-  file transfer service suitable for educational capstone submission.
-  It is prepared for submission as required by the Capstone guidelines.
+This project successfully demonstrates the implementation of a secure and efficient *Network File Sharing System* using socket programming in Python.  
+It simulates real-world client–server communication, handling file uploads, downloads, and authentication over TCP with proper data integrity and protocol handling.  
+
+Through this project, we learned key concepts of:
+- Linux-based networking,
+- Socket programming (LSP),
+- Client–server architecture, and
+- Secure file transfer mechanisms.
+
+This capstone strengthened My practical understanding of *Linux System Programming* and teamwork in software development.
 
 
 
