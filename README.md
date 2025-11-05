@@ -104,16 +104,24 @@ Server (upload received)
       [+] Received upload: received_uploads/test_upload.txt (24 bytes)
 
 
-🧩 Implementation Notes
-     The server uses a simple textual protocol:
-                  LIST → server returns file1|file2|...
-                  DOWNLOAD <filename> → server sends SIZE N then the bytes
-                  UPLOAD <filename> → client sends SIZE N then the bytes
-                  QUIT → close politely
-                  AUTH <username> <password> → initial auth handshake
-    The implementation handles TCP stream edge cases: headers and data may coalesce; server parses combined headers robustly.
-    Transfers use chunked reads (CHUNK_SIZE = 4096) — supports large files.
+🧩 Implementation Notes (for README / report)
 
+The server uses a simple textual protocol:
+
+LIST → server returns file1|file2|...
+
+DOWNLOAD <filename> → server sends SIZE N then the bytes
+
+UPLOAD <filename> → client sends SIZE N then the bytes
+
+QUIT → close politely
+
+AUTH <username> <password> → initial auth handshake
+
+
+The implementation handles TCP stream edge cases: headers and data may coalesce; server parses combined headers robustly.
+
+Transfers use chunked reads (CHUNK_SIZE = 4096) — supports large files.
     
 🧪 Testing checklist
 
