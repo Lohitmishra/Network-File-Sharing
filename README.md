@@ -108,24 +108,22 @@ Server (upload received)
 
 The server uses a simple textual protocol:
 
-LIST → server returns file1|file2|...
-DOWNLOAD <filename> → server sends SIZE N then the bytes
-UPLOAD <filename> → client sends SIZE N then the bytes
-QUIT → close politely
-AUTH <username> <password> → initial auth handshake
+LIST → server returns file1|file2|... DOWNLOAD <filename> → server sends SIZE N then the bytes UPLOAD <filename> → client sends SIZE N then the bytes QUIT → close politely AUTH <username> <password> → initial auth handshake
 
-The implementation handles TCP stream edge cases: headers and data may coalesce; server parses combined headers robustly.
-Transfers use chunked reads (CHUNK_SIZE = 4096) — supports large files.
+The implementation handles *TCP stream edge cases* — headers and data may coalesce, and the server parses combined headers robustly.
+
+Transfers use *chunked reads* (CHUNK_SIZE = 4096), which supports large files efficiently.
 
 
-    
-🧪 Testing checklist
+ 🧪 Testing Checklist
 
-   [ ] server.py runs without traceback.
-   [ ] client.py connects and authenticates successfully.
-   [ ] Download a file and verify content in downloads/.
-   [ ] Upload a file and verify it appears in received_uploads/.
-   [ ] Ensure server_key.pem is not committed to repo.
+Before submitting, verify the following ✅
+
+- [ ] server.py runs without traceback.  
+- [ ] client.py connects and authenticates successfully.  
+- [ ] Download a file and verify its content appears correctly in downloads/.  
+- [ ] Upload a file and confirm it appears in received_uploads/.  
+- [ ] Ensure server_key.pem is *not committed* to the repository.  
 
         
 🏁 Final Notes
