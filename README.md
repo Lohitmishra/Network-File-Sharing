@@ -65,19 +65,23 @@ To design a secure and reliable file sharing system that enables data transfer b
 - Gained practical exposure to *authentication and encryption concepts*.
 
  
- 🧾 How to Run
+🧾 How to Run
 
- 🖥️ On the Server Terminal:
+   🖥️ On the Server Terminal:
           cd network-file-sharing
           python3 server.py
- 💻 On the Client Terminal:
+
+          
+   💻 On the Client Terminal:
            cd network-file-sharing
            python3 client.py
 
+
 ✅ When prompted:
-Enter username: admin
-Enter password: password
-You’ll see: Authentication successful
+    Enter username: admin
+    Enter password: password
+    You’ll see: Authentication successful
+
 
 Then use options: 
                  1️⃣ List files
