@@ -1,16 +1,24 @@
- 🌐 Network File Sharing System (LSP Capstone Project)
+ Network File Sharing System(LSP Capstone Project)
 
- 🧑‍💻 Developed by: Lohit Kumar Mishra
- 📚 Course: Linux System Programming (LSP)
- 🏫 Institution: SOA - ITER
 
- 📘 Project Overview
-This project implements a Network File Sharing System* using *Client-Server architecture over sockets.  
-It allows users to *list, download, upload, and securely transfer files* between the client and the server.  
+  Developed by: Lohit Kumar Mishra
+ 
+  Course: Linux System Programming (LSP)
+ 
+  Institution: SOA - ITER
+
+Project Overview
+
+
+This project implements a Network File Sharing System using Client-Server architecture over sockets.  
+It allows users to list, download, upload, and securely transfer files between the client and the server.  
 Security is enhanced with *authentication* and *encryption* features using SSL (Secure Sockets Layer).
 
 🎯 Objective
-To design a secure and reliable file sharing system that enables data transfer between multiple systems using *socket programming in Python* on a *Linux-based environment (WSL2/Ubuntu)*.
+
+
+To design a secure and reliable file sharing system that enables data transfer between multiple systems using
+*socket programming in Python* on a *Linux-based environment (WSL2/Ubuntu)*.
 
 
  
