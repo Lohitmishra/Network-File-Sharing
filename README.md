@@ -69,14 +69,14 @@ To design a secure and reliable file sharing system that enables data transfer b
 
    🖥️ On the Server Terminal:
    
-          cd network-file-sharing
-          python3 server.py
+    cd network-file-sharing
+    python3 server.py
 
           
    💻 On the Client Terminal:
    
-           cd network-file-sharing
-           python3 client.py
+    cd network-file-sharing
+    python3 client.py
 
 
 ✅ When prompted:
@@ -88,10 +88,10 @@ To design a secure and reliable file sharing system that enables data transfer b
 
 Then use options: 
 
-                 1️⃣ List files
-                 2️⃣ Download
-                 3️⃣ Upload
-                 4️⃣ Quit
+     1️⃣ List files
+     2️⃣ Download
+     3️⃣ Upload
+     4️⃣ Quit
 
 🧾 Example terminal flows
 
